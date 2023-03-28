@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * print_alphabet_x10 - prints the alphabet inercase, followed by a new line.
+ */
+
 void print_alphabet_x10(void)
 {
 	int i;
@@ -11,6 +15,7 @@ void print_alphabet_x10(void)
 		for (c = 'a'; c <= 'z'; c++)
 			_putchar(c);
 
-		_putchar(c);
+		if (i != 9)
+			_putchar('\n');
 	}
 }
